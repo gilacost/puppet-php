@@ -109,6 +109,8 @@ define php::ini (
 
   include '::php::common'
 
+  #require '::apache::mod::php'
+
   file { $title:
     ensure  => $ensure,
     content => template($template),
